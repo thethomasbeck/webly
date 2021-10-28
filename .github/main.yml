@@ -18,6 +18,7 @@ jobs:
           asset_name: 'my-asset-name'
           template_type: 'TF'
           template_version: '0.13'
+          scan_path: '../'
       - name: Upload scan result artifact
         uses: actions/upload-artifact@v2
         if: success() || failure()

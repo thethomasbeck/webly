@@ -19,6 +19,7 @@ jobs:
           template_type: 'TF'
           template_version: '0.13'
           scan_path: '/'
+          use_scan_path_when_pr: true
       - name: Upload scan result artifact
         uses: actions/upload-artifact@v2
         if: success() || failure()
